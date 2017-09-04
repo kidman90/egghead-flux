@@ -23,7 +23,7 @@ const _removeItem = (item) => {
 };
 
 const _findCartItem = (item) => {
-  return _cartItems.findIndex(cartItem => cartItem.id === item.id);
+  return _cartItems.find(cartItem => cartItem.id === item.id);
 };
 
 const _increaseItem = (item) => item.qty++;
